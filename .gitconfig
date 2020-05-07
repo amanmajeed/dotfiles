@@ -7,7 +7,7 @@
 	decorate = short
 	ui = auto
 [alias]
-	hist log --oneline --graph --decorate --color
+	hist = log --oneline --graph --decorate --color
 [core]
 	quotepath = false
 [credential]
