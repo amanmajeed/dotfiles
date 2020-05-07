@@ -1,14 +1,19 @@
 [user]
-	email = zaitsev.serge@gmail.com
-	name = Serge A. Zaitsev
+	name = Aman Majeed
+	email = amanmajeed@gmail.com
 [push]
 	default = simple
 [color]
 	decorate = short
 	ui = auto
 [alias]
-	ci = commit
+	hist log --oneline --graph --decorate --color
 [core]
 	quotepath = false
 [credential]
 	helper = cache --timeout=3000000
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
